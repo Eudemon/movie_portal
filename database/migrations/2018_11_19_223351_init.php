@@ -20,6 +20,7 @@ class Init extends Migration
             $table->integer('length');
             $table->integer('year');
             $table->tinyInteger('rating');
+            $table->string('img');
         });
     }
 

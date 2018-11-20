@@ -7,10 +7,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Movie Time</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script language="JavaScript" src="{{ url('js/jquery-3.3.1.min.js') }}"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -18,6 +19,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url('bootstrap/css/bootstrap.min.css') }}" >
 </head>
 <body>
     <div id="app">
@@ -78,8 +80,12 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
+        <main class="container">
+            <div class="row pt-4">
+                <div class="col-lg-8 col-md-10 mx-auto align-content-center ">
+                    @yield('content')
+                </div>
+            </div>
         </main>
     </div>
 </body>

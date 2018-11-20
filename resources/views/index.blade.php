@@ -2,6 +2,6 @@
 
 @section('content')
 
-<p>test this works</p>
+@include('layouts.submit')
 
 @endsection
