@@ -16,3 +16,5 @@ Route::get('/', 'MainController@home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/post', 'MainController@post');

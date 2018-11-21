@@ -28,4 +28,8 @@ class MainController
 
         return view('index')->with(['movies' => $movies]);
     }
+
+    public function post(Request $request){
+        $input = $request->all();
+    }
 }
