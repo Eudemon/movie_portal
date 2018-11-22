@@ -20,13 +20,14 @@ class Service
      * @param $year Integer
      * @param $rating TinyInt
      */
-    public function insert($title, $format, $length, $year, $rating){
+    public function insert($title, $format, $length, $year, $rating, $path){
         DB::table('movie')->insert([
             'title' => $title,
             'format' => $format,
             'length' => $length,
             'year' => $year,
-            'rating' => $rating
+            'rating' => $rating,
+            'img' => $path
         ]);
     }
 
@@ -44,8 +45,18 @@ class Service
         if ($num === null){
             $return = DB::table('movie')->get();
         } else {
-            $return = DB::table('movie')->select('*')->limit($num);
+            $return = DB::table('movie')->select()->limit($num)->get();
         }
+
+        return $return;
+    }
+
+    /**
+     * @param $id Int
+     * @return \Illuminate\Database\Query\Builder
+     */
+    public function single($id){
+        $return = DB::table('movie')->select()->where('id', $id)->get();
 
         return $return;
     }

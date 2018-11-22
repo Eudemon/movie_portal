@@ -17,4 +17,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/list', 'MainController@list');
+
 Route::post('/post', 'MainController@post');
+
+Route::get('/movie/{id}', 'MainController@movie');
+
+Route::post('/delete', 'MainController@delete');

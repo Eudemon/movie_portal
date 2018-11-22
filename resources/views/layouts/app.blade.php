@@ -39,7 +39,7 @@
                                 <a class="nav-link" href="{{ url('/') }}">Home</a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Listing</a>
+                                <a class="nav-link" href="{{ url('/list') }}">Listing</a>
                             </li>
                         </ul>
 

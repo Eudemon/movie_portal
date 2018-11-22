@@ -2,6 +2,6 @@
 
 @section('content')
 
-@include('layouts.submit')
+    @include('layouts.submit')
 
 @endsection

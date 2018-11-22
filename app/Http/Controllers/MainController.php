@@ -11,6 +11,7 @@ namespace App\Http\Controllers;
 use App\Http\Models\Service;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class MainController
 {
@@ -31,5 +32,22 @@ class MainController
 
     public function post(Request $request){
         $input = $request->all();
+
+        $filename = time() . '-' . $input['image']->getClientOriginalName();
+
+
+        $this->service->insert($input['title'], $input['format'], $input['length'], $input['year'], $input['rating'], $filename);
+    }
+
+    public function list(){
+        return view('list')->with(['movies' => $this->service->get()->toArray()]);
+    }
+
+    public function movie(Request $request, $id){
+        return view('movie')->with(['movies' => $this->service->single($id)->toArray()]);
+    }
+
+    public function delete(Request $request){
+        dd($request->all());
     }
 }

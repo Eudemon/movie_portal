@@ -2,16 +2,17 @@
     <form action="{{ url('/post') }}" method="post" class="card p-3" enctype="multipart/form-data">
         @csrf
         <h2>Add a new movie</h2>
+        <p class="text-info">Please fill in all fields</p>
         <div class="row">
             <div class="col">
                 <label for="title">Title:</label>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Movie Title" name="title">
+                    <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Movie Title" name="title" required>
                 </div>
             </div>
             <div class="col">
                 <label for="imageVal">Cover:</label>
-                <input type="file" name="image" id="imageVal">
+                <input type="file" name="image" id="imageVal" required>
             </div>
         </div>
         <hr />
@@ -30,7 +31,7 @@
             <div class="col">
                 <div class="form-group">
                     <label for="formatVal">Format:</label>
-                    <select class="form-control" name="format" id="formatVal">
+                    <select class="form-control" name="format" id="formatVal" required>
                         <option disabled selected value> -- select an option -- </option>
                         <option>VHS</option>
                         <option>DVD</option>
@@ -42,7 +43,7 @@
                 <label for="rating">Rating: </label>
                 <div class="form-control">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="rating" id="inlineRadio1" value="1">
+                        <input class="form-check-input" type="radio" name="rating" id="inlineRadio1" value="1" required>
                         <label class="form-check-label" for="inlineRadio1">1</label>
                     </div>
                     <div class="form-check form-check-inline">
