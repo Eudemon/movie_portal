@@ -1,3 +1,4 @@
+<div class="clearfix">
 @if (Auth::check())
     <form action="{{ url('/post') }}" method="post" class="card p-3" enctype="multipart/form-data">
         @csrf
@@ -72,3 +73,4 @@
         To submit / delete movie, please <a href="{{ url('login') }}">log-in</a> or <a href="{{ url('register') }}">register</a>
     </div>
 @endif
+</div>

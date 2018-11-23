@@ -48,6 +48,8 @@ class MainController
     }
 
     public function delete(Request $request){
-        dd($request->all());
+        $this->service->delete($request->get('id'));
+
+        return redirect('/list');
     }
 }

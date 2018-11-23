@@ -88,6 +88,10 @@
                 </div>
             </div>
         </main>
+
+        <footer class="p-2 text-center border-top">
+            <a href="https://github.com/Eudemon/movie_portal">Source</a>
+        </footer>
     </div>
     <script type="text/javascript" src="{{ url('js/include.js') }}"></script>
 </body>
