@@ -4,11 +4,15 @@ Author: Randy (HaoRan) Yu - eudemonrandy@hotmail.com
 
 tech stack: Laravel (PHP), jQuery (JavaScript), Bootstrap (CSS), Blade (HTML)
 
+sample setup on AWS: [http://18.222.206.36](http://18.222.206.36)
+
 #Instruction
 
 git clone, point web server to {root}/public
 
-rename `.env.example` to `.env`, create database base on environment values
+`composer install` for dependencies
+
+create database base on environment variables found in rename `.env.example` to `.env`
 
 run `php artisan migrate --seed` to import tables and sample data
 
