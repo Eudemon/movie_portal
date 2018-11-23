@@ -12,12 +12,12 @@ rename `.env.example` to `.env`, create database base on environment values
 
 run `php artisan migrate --seed` to import tables and sample data
 
-![screenshot](https://raw.githubusercontent.com/Eudemon/laravel-car/master/screenshot/11.PNG)
+![screenshot](https://raw.githubusercontent.com/Eudemon/movie_portal/master/screenshot/11.PNG)
 
-![screenshot](https://raw.githubusercontent.com/Eudemon/laravel-car/master/screenshot/22.PNG)
+![screenshot](https://raw.githubusercontent.com/Eudemon/movie_portal/master/screenshot/22.PNG)
 
-![screenshot](https://raw.githubusercontent.com/Eudemon/laravel-car/master/screenshot/33.PNG)
+![screenshot](https://raw.githubusercontent.com/Eudemon/movie_portal/master/screenshot/33.PNG)
 
-![screenshot](https://raw.githubusercontent.com/Eudemon/laravel-car/master/screenshot/44.PNG)
+![screenshot](https://raw.githubusercontent.com/Eudemon/movie_portal/master/screenshot/44.PNG)
 
-![screenshot](https://raw.githubusercontent.com/Eudemon/laravel-car/master/screenshot/55.PNG)
+![screenshot](https://raw.githubusercontent.com/Eudemon/movie_portal/master/screenshot/55.PNG)
