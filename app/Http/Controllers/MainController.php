@@ -35,8 +35,9 @@ class MainController
 
         $filename = time() . '-' . $input['image']->getClientOriginalName();
 
-
         $this->service->insert($input['title'], $input['format'], $input['length'], $input['year'], $input['rating'], $filename);
+
+        return redirect($input['url']);
     }
 
     public function list(){

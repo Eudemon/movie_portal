@@ -25,3 +25,5 @@ run `php artisan migrate --seed` to import tables and sample data
 ![screenshot](https://raw.githubusercontent.com/Eudemon/movie_portal/master/screenshot/44.PNG)
 
 ![screenshot](https://raw.githubusercontent.com/Eudemon/movie_portal/master/screenshot/55.PNG)
+
+![screenshot](https://raw.githubusercontent.com/Eudemon/movie_portal/master/screenshot/66.PNG)

@@ -66,6 +66,7 @@
                 </div>
             </div>
         </div>
+        <input hidden name="url" value="{{ url()->full() }}">
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 @else
