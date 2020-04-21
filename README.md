@@ -1,6 +1,6 @@
 #About
 
-Author: Randy (HaoRan) Yu - eudemonrandy@hotmail.com
+Author: Randy (HaoRan) Yu - https://www.linkedin.com/in/randy-haoran-yu/
 
 tech stack: Laravel (PHP), jQuery (JavaScript), Bootstrap (CSS), Blade (HTML)
 
